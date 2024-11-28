@@ -86,3 +86,35 @@ button:hover {
     border: 1px solid #28a745;
     border-radius: 4px;
 }
+.upload-section {
+    border: 2px dashed #ccc;
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.upload-section.highlight {
+    border-color: #007bff;
+    background-color: rgba(0,123,255,0.1);
+}
+
+.upload-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.download-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 5px 0;
+}
+
+.download-link:hover {
+    background-color: #218838;
+}
