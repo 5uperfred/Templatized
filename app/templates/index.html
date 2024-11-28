@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templatized - Document Processing</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Templatized</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <div class="upload-section">
+                <label for="document">Select Document (PDF or DOCX):</label>
+                <input type="file" id="document" name="document" accept=".pdf,.docx" required>
+            </div>
+            <button type="submit">Process Document</button>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </form>
+
+        <div id="result" style="display: none;">
+            <h3>Processed Files:</h3>
+            <div id="downloads"></div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
