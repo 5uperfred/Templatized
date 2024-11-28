@@ -1,9 +1,11 @@
-# .gitignore
+gitignore
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
+env/
 build/
 develop-eggs/
 dist/
@@ -19,9 +21,19 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-.env
-.venv
+
+# Virtual Environment
 venv/
 ENV/
+
+# IDE
 .idea/
 .vscode/
+
+# Application specific
+uploads/*
+processed/*
+!uploads/.gitkeep
+!processed/.gitkeep
+.env
+*.log
